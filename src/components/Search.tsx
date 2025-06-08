@@ -34,6 +34,7 @@ const Search: React.FC = () => {
       const res = await fetch(`${backendUrl}/search_by_image`, {
         method: 'POST',
         body: formData,
+        mode: "cors"
       });
       const data = await res.json();
       setImageMatches(data.results || []);
@@ -52,6 +53,7 @@ const Search: React.FC = () => {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ query: textQuery }),
+        mode: "cors"
       });
       const data = await res.json();
       setTextMatches(data.results || []);
