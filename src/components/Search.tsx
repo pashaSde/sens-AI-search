@@ -34,6 +34,7 @@ const Search: React.FC = () => {
       const res = await fetch(`${backendUrl}/search_by_image`, {
         method: 'POST',
         body: formData,
+        headers: { 'ngrok-skip-browser-warning': 'true' }, // Skip ngrok warning if using ngrok
         mode: "cors"
       });
       const data = await res.json();
@@ -51,7 +52,7 @@ const Search: React.FC = () => {
     try {
       const res = await fetch(`${backendUrl}/search_by_text`, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'application/json', 'ngrok-skip-browser-warning': 'true'},
         body: JSON.stringify({ query: textQuery }),
         mode: "cors"
       });
