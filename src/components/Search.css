@@ -1,0 +1,59 @@
+.toggle-container.slider-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2em;
+  gap: 1em;
+}
+
+.toggle-label {
+  font-size: 1.1em;
+  color: #e24460;
+  transition: color 0.2s;
+}
+
+.toggle-label.active {
+  color: #e24460;
+  font-weight: bold;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 28px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: #28283f;
+  border: 2px solid #e24460;
+  border-radius: 34px;
+  transition: background 0.2s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px; width: 20px;
+  left: 4px; bottom: 2.5px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.2s;
+}
+
+input:checked + .slider:before {
+  transform: translateX(20px);
+}
+
+input:checked + .slider {
+  background-color: #28283f;
+}
