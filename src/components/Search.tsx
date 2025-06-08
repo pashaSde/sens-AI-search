@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const backendUrl = 'http://localhost:8001';
+const backendUrl = process.env.REACT_APP_BACKEND_URL;
 
 // Helper to map OOD score to a green-red color (lower = greener, higher = redder)
 function oodColor(score: number, min: number, max: number) {
