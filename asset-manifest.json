@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/sens-AI-search/static/css/main.71b0c8d5.chunk.css",
-    "main.js": "/sens-AI-search/static/js/main.1cf6e078.chunk.js",
-    "main.js.map": "/sens-AI-search/static/js/main.1cf6e078.chunk.js.map",
+    "main.css": "/sens-AI-search/static/css/main.a6fd3b41.chunk.css",
+    "main.js": "/sens-AI-search/static/js/main.49eef247.chunk.js",
+    "main.js.map": "/sens-AI-search/static/js/main.49eef247.chunk.js.map",
     "runtime-main.js": "/sens-AI-search/static/js/runtime-main.c58f3276.js",
     "runtime-main.js.map": "/sens-AI-search/static/js/runtime-main.c58f3276.js.map",
-    "static/js/2.244cd907.chunk.js": "/sens-AI-search/static/js/2.244cd907.chunk.js",
-    "static/js/2.244cd907.chunk.js.map": "/sens-AI-search/static/js/2.244cd907.chunk.js.map",
+    "static/js/2.22eb9e5f.chunk.js": "/sens-AI-search/static/js/2.22eb9e5f.chunk.js",
+    "static/js/2.22eb9e5f.chunk.js.map": "/sens-AI-search/static/js/2.22eb9e5f.chunk.js.map",
     "index.html": "/sens-AI-search/index.html",
-    "static/css/main.71b0c8d5.chunk.css.map": "/sens-AI-search/static/css/main.71b0c8d5.chunk.css.map",
-    "static/js/2.244cd907.chunk.js.LICENSE.txt": "/sens-AI-search/static/js/2.244cd907.chunk.js.LICENSE.txt"
+    "static/css/main.a6fd3b41.chunk.css.map": "/sens-AI-search/static/css/main.a6fd3b41.chunk.css.map",
+    "static/js/2.22eb9e5f.chunk.js.LICENSE.txt": "/sens-AI-search/static/js/2.22eb9e5f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.c58f3276.js",
-    "static/js/2.244cd907.chunk.js",
-    "static/css/main.71b0c8d5.chunk.css",
-    "static/js/main.1cf6e078.chunk.js"
+    "static/js/2.22eb9e5f.chunk.js",
+    "static/css/main.a6fd3b41.chunk.css",
+    "static/js/main.49eef247.chunk.js"
   ]
 }
