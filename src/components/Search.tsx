@@ -132,7 +132,7 @@ const Search: React.FC = () => {
                     <h2>Search by Image</h2>
                     <form onSubmit={handleImageUpload}>
                         <label htmlFor="image-upload" className="file-upload-label">
-                            <FiUpload size={28} />
+                            {FiUpload({ size: 28 })}
                             {imageFile ? <span className="file-placeholder">{imageFile.name}</span> : <span className="file-placeholder">Upload image</span>}
                         </label>
                         <input
