@@ -96,7 +96,7 @@ const Search: React.FC = () => {
               {match.path && (
                 <img
                   src={backendUrl + match.path}
-                  alt=""
+                  alt={match.caption}
                   style={{ maxWidth: 400, maxHeight: 400, borderRadius: 12, marginBottom: '0.5em' }}
                 />
               )}
@@ -141,7 +141,7 @@ const Search: React.FC = () => {
               {match.path && (
                 <img
                   src={backendUrl + match.path}
-                  alt=""
+                  alt={match.caption}
                   style={{ maxWidth: 400, maxHeight: 400, borderRadius: 12, marginBottom: '0.5em' }}
                 />
               )}

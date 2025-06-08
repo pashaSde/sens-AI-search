@@ -79,14 +79,24 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # For development, allow all. Restrict in production.
-    allow_credentials=True,
+    allow_origins=["https://pashasde.github.io", "http://localhost:3000"],  # Replace with actual frontend URL
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
-# Serve images as static files
-app.mount("/images", StaticFiles(directory="./flickr30k-test-images"), name="images")
+from starlette.responses import FileResponse
+from fastapi.staticfiles import StaticFiles
+
+class CustomStaticFiles(StaticFiles):
+    async def get_response(self, path, scope):
+        response: FileResponse = await super().get_response(path, scope)
+        if response.status_code == 200:
+            response.headers["Access-Control-Allow-Origin"] = "https://pashasde.github.io"
+            response.headers["Cross-Origin-Resource-Policy"] = "cross-origin"
+        return response
+
+# Mount this as your static route
+app.mount("/images", CustomStaticFiles(directory="./flickr30k-test-images"), name="images")
 
 # --- API Models ---
 
