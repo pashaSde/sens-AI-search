@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import './Search.css';
+import { FiUpload } from 'react-icons/fi'; // Add at the top
 
 const backendUrl = process.env.REACT_APP_BACKEND_URL;
 
@@ -110,6 +111,7 @@ const Search: React.FC = () => {
         ))
     );
 
+    // @ts-ignore
     return (
         <div>
             <div className="toggle-container slider-toggle">
@@ -129,9 +131,15 @@ const Search: React.FC = () => {
                 <div className="sensei-card">
                     <h2>Search by Image</h2>
                     <form onSubmit={handleImageUpload}>
+                        <label htmlFor="image-upload" className="file-upload-label">
+                            <FiUpload size={28} />
+                            {imageFile ? <span className="file-placeholder">{imageFile.name}</span> : <span className="file-placeholder">Upload image</span>}
+                        </label>
                         <input
+                            id="image-upload"
                             type="file"
                             accept="image/*"
+                            style={{ display: 'none' }}
                             onChange={e => setImageFile(e.target.files?.[0] || null)}
                         />
                         <button className="sensei-btn" type="submit" disabled={loading}>Upload & Search</button>

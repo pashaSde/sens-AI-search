@@ -63,6 +63,7 @@ body {
   letter-spacing: 0.08em;
   box-shadow: 0 2px 8px #e9456080;
   transition: background 0.2s, transform 0.2s;
+  margin-left: 8px;
 }
 
 .sensei-btn:hover {

@@ -57,3 +57,29 @@ input:checked + .slider:before {
 input:checked + .slider {
   background-color: #28283f;
 }
+
+.file-upload-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  cursor: pointer;
+  color: #c9b037;
+  font-size: 1.1em;
+  margin-bottom: 1em;
+  transition: color 0.2s;
+}
+.file-upload-label:hover {
+  color: #b89a2c;
+}
+.file-placeholder {
+  color: white;
+  font-size: 1em;
+}
+.file-name {
+  color: #333;
+  font-size: 1em;
+  max-width: 180px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
