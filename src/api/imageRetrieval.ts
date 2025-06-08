@@ -19,7 +19,7 @@ export const uploadImage = async (imageFile: File) => {
     }
 };
 
-export const getMatches = async (imageId) => {
+export const getMatches = async (imageId: string) => {
     try {
         const response = await axios.get(`${API_URL}/matches/${imageId}`);
         return response.data; // Assuming the response contains the match results
