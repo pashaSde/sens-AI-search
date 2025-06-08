@@ -16,6 +16,6 @@ jobs:
       - run: npm ci
       - run: npm run build
       - run: npm run deploy
-        env:
+#        env:
           # Add any required environment variables here
           # EXAMPLE_ENV: ${{ secrets.EXAMPLE_ENV }}
