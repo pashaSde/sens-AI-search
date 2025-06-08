@@ -1,7 +1,8 @@
-# Image Retrieval UI - `https://pashasde.github.io/sens-AI-search/`
+# Image Retrieval UI
 
 This project is a web application that allows users to upload an image and receive corresponding matches based on the uploaded image. It is built using React and TypeScript.
 
+Demo - [Sens-AI-Search](https://pashasde.github.io/sens-AI-search/)
 ## Project Structure
 
 ```
